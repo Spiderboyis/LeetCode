@@ -86,16 +86,14 @@ public class ListNode {
         return false;
     }
     public ListNode removeElements(ListNode head, int val){
-        ListNode ans = new ListNode(0, head);
+        ListNode ans = new ListNode(0,head);
         ListNode temp = ans;
-
-        while (temp != null) {
-            while (temp.next != null && temp.next.val == val) {
+        while(temp != null){
+            if(temp.next != null && temp.next.val == val){
                 temp.next = temp.next.next;
             }
             temp = temp.next;
         }
-
         return ans.next;
     }
 }
