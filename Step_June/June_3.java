@@ -95,7 +95,6 @@ public class June_3 {
 //        for (long val : a) {
 //            totalSum += val;
 //        }
-//
 //        long leftSum = 0;
 //        for (int i = 0; i < a.length; i++) {
 //            long rightSum = totalSum - leftSum - a[i];

@@ -36,7 +36,6 @@ public class June_8 {
         private void rehash(){
             int newCapacity = this.capacity * 2;
             Node[] newCollection = new Node[newCapacity];
-
             for(int i = 0; i < this.capacity; i++){
                 Node current = collection[i];
                 while(current != null){
@@ -147,7 +146,7 @@ public class June_8 {
 
         }
 
-        public void removie(int key){
+        public void remove(int key){
             int hash = getHash(key,this.capacity);
             for(int i = 0; i < this.capacity; i++){
                 int index = (hash + i) % capacity;
